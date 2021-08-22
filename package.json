@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "serve": "vue-cli-service serve",
+        "dev": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "npm run lint:css && npm run lint:js",
         "lint:js": "cross-env NODE_ENV=production eslint ./src --ext .js,.vue --quiet --fix",
