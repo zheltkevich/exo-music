@@ -39,8 +39,8 @@ module.exports = {
         ],
         'no-debugger': 'error',
         'no-extra-parens': 'error',
-        'no-promise-executor-return': 'error',
-        'no-unreachable-loop': 'error',
+        'no-promise-executor-return': 'off',
+        'no-unreachable-loop': 'off',
 
         /* Best Practices */
         'accessor-pairs': 'error',
@@ -59,7 +59,7 @@ module.exports = {
                 commentPattern: '^no\\sdefault',
             },
         ],
-        'default-case-last': 'error',
+        'default-case-last': 'off',
         'dot-location': ['error', 'property'],
         'dot-notation': 'error',
         'eqeqeq': ['error', 'always'],
