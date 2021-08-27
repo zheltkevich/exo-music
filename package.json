@@ -15,11 +15,11 @@
     "lint-staged": {
         "*.{js,vue}": [
             "npm run lint:js",
-            "git add"
+            "git add ."
         ],
         "*.{css,sass,scss,vue}": [
             "npm run lint:css",
-            "git add"
+            "git add ."
         ]
     },
     "dependencies": {
