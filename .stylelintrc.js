@@ -134,7 +134,7 @@ module.exports = {
 
         'no-unknown-animations': null,
 
-        'color-hex-case': 'lower',
+        'color-hex-case': 'upper',
         'color-hex-length': 'long',
 
         'font-family-name-quotes': 'always-where-recommended',

@@ -1,8 +1,10 @@
 <template>
-    <div class="home">
+    <div
+        class="home"
+        data-theme="dark">
         <img
             alt="Vue logo"
-            src="../assets/logo.png">
+            src="../assets/logo.svg">
         <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
 </template>
@@ -18,3 +20,10 @@ export default {
     },
 };
 </script>
+
+<style lang="scss">
+.home {
+    color: var(--text-main);
+    background-color: var(--bg-main);
+}
+</style>

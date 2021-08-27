@@ -18,8 +18,9 @@ export default {
 
 <style lang="scss">
 #app { // stylelint-disable-line selector-max-id
-    color: #2c3e50;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    color: #2C3E50;
+    font-weight: 700;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -29,11 +30,11 @@ export default {
     padding: 30px;
 
     a {
-        color: #2c3e50;
+        color: #2C3E50;
         font-weight: 700;
 
         &.router-link-exact-active {
-            color: #42b983;
+            color: #42B983;
         }
     }
 }
