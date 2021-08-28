@@ -7,7 +7,8 @@
         "build": "vue-cli-service build",
         "lint": "npm run lint:css && npm run lint:js",
         "lint:js": "cross-env NODE_ENV=production eslint ./src --ext .js,.vue --quiet --fix",
-        "lint:css": "cross-env NODE_ENV=production stylelint \"./src/**/*.{css,sass,scss,vue}\" --quiet --fix"
+        "lint:css": "cross-env NODE_ENV=production stylelint \"./src/**/*.{css,sass,scss,vue}\" --quiet --fix",
+        "gh-pages-deploy": "node GitHubPagesDeploy.js"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
@@ -47,6 +48,7 @@
         "eslint-plugin-promise": "^5.1.0",
         "eslint-plugin-standard": "^4.1.0",
         "eslint-plugin-vue": "^7.9.0",
+        "execa": "^1.0.0",
         "lint-staged": "^11.0.0",
         "node-sass": "^4.12.0",
         "sass-loader": "^9.0.2",

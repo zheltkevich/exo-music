@@ -451,7 +451,7 @@ module.exports = {
                 allowCoexistStyle: true,
             },
         ],
-        'vue/no-multiple-template-root': 'off',
+        'vue/no-multiple-template-root': 'error',
         'vue/no-mutating-props': 'error',
         'vue/no-parsing-error': 'error',
         'vue/no-reserved-keys': 'error',
