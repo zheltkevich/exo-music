@@ -24,6 +24,6 @@ export default {
 <style lang="scss">
 .home {
     color: var(--text-main);
-    background-color: #C02121;
+    background-color: var(--bg-main);
 }
 </style>
