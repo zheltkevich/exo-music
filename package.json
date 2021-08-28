@@ -8,7 +8,7 @@
         "lint": "npm run lint:css && npm run lint:js",
         "lint:js": "cross-env NODE_ENV=production eslint ./src --ext .js,.vue --quiet --fix",
         "lint:css": "cross-env NODE_ENV=production stylelint \"./src/**/*.{css,sass,scss,vue}\" --quiet --fix",
-        "gh-pages-deploy": "node GitHubPagesDeploy.js"
+        "ghp-deploy": "node GitHubPagesDeploy.js"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
