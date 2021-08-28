@@ -1,4 +1,4 @@
 node_modules/
 dist/
 public/
-GitHubPagesDeploy.js
+gh-pages-deploy.js
