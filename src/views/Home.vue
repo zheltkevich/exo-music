@@ -1,7 +1,7 @@
 <template>
     <div
         class="home"
-        data-theme="default">
+        data-theme="dark">
         <img
             alt="Vue logo"
             src="../assets/logo.svg">
