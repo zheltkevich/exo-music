@@ -21,4 +21,4 @@ const execa = require('execa')
         console.log(e.message);
         process.exit(1);
     }
-})();
+});
