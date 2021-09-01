@@ -6,18 +6,17 @@
         <img
             alt="Логотип ExoMusic"
             src="../assets/svg/logo.svg">
-        <HelloWorld msg="Welcome to Your Vue.js App" />
+        <ViewBackground class="view__background" />
     </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import ViewBackground from '@/components/ViewBackground.vue';
 
 export default {
     name: 'Home',
     components: {
-        HelloWorld,
+        ViewBackground,
     },
 };
 </script>

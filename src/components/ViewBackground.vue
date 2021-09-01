@@ -1,7 +1,8 @@
 <template>
     <div class="view-background">
-        <div class="view-background__blur view-background__blur--0">
+        <div class="view-background__blur-container view-background__blur-container--0">
             <svg
+                class="view-background__blur-svg view-background__blur-svg--0"
                 width="1534"
                 height="1214"
                 viewBox="0 0 1534 1214"
@@ -41,8 +42,9 @@
             </svg>
         </div>
 
-        <div class="view-background__blur view-background__blur--1">
+        <div class="view-background__blur-container view-background__blur-container--1">
             <svg
+                class="view-background__blur-svg view-background__blur-svg--1"
                 width="1054"
                 height="1054"
                 viewBox="0 0 1054 1054"
@@ -82,8 +84,9 @@
             </svg>
         </div>
 
-        <div class="view-background__blur view-background__blur--2">
+        <div class="view-background__blur-container view-background__blur-container--2">
             <svg
+                class="view-background__blur-svg view-background__blur-svg--2"
                 width="1534"
                 height="1054"
                 viewBox="0 0 1534 1054"
@@ -123,8 +126,9 @@
             </svg>
         </div>
 
-        <div class="view-background__blur view-background__blur--3">
+        <div class="view-background__blur-container view-background__blur-container--3">
             <svg
+                class="view-background__blur-svg view-background__blur-svg--3"
                 width="1054"
                 height="1054"
                 viewBox="0 0 1054 1054"
@@ -164,8 +168,9 @@
             </svg>
         </div>
 
-        <div class="view-background__blur view-background__blur--4">
+        <div class="view-background__blur-container view-background__blur-container--4">
             <svg
+                class="view-background__blur-svg view-background__blur-svg--4"
                 width="1306"
                 height="1373"
                 viewBox="0 0 1306 1373"
@@ -206,8 +211,9 @@
             </svg>
         </div>
 
-        <div class="view-background__blur view-background__blur--5">
+        <div class="view-background__blur-container view-background__blur-container--5">
             <svg
+                class="view-background__blur-svg view-background__blur-svg--5"
                 width="1299"
                 height="1373"
                 viewBox="0 0 1299 1373"
@@ -258,11 +264,18 @@ export default {
 
 <style lang="scss">
 .view-background {
-    display: grid;
-    grid-auto-rows: 2fr;
-    grid-auto-columns: 3fr;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
     max-height: 100%;
     pointer-events: none;
+
+    &__blur-container {
+        flex-basis: 33%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 33%;
+        max-height: 50%;
+    }
 }
 </style>
