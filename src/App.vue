@@ -19,6 +19,7 @@ export default {
 .view {
     position: relative;
     display: grid;
+    height: 100vh;
     background-color: var(--bgcolor-main);
 
     &__background {
