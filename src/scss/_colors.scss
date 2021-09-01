@@ -1,10 +1,11 @@
 :root,
 [data-theme="default"] {
-    --text-main: #2C3E50;
-    --bg-main: #EEEEEE;
+    --color-text-main: #FFFFFF;
+    --color-elements: #8E8E8E;
+    --bgcolor-main: #0A0A0A;
 }
 
 [data-theme="dark"] {
-    --text-main: #A1B0BE;
-    --bg-main: #202020;
+    --color-text-main: #A1B0BE;
+    --bgcolor-main: #202020;
 }

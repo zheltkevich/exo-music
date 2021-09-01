@@ -1,41 +1,32 @@
 <template>
-    <div class="nav">
-        <router-link to="/">
-            Home
-        </router-link> |
-        <router-link to="/about">
-            About
-        </router-link>
+    <div class="view">
         <router-view />
+        <ViewBackground class="view__background" />
     </div>
 </template>
 
 <script>
+import ViewBackground from '@/components/ViewBackground.vue';
 export default {
     name: 'App',
+    components: {
+        ViewBackground,
+    },
 };
 </script>
 
 <style lang="scss">
-#app { // stylelint-disable-line selector-max-id
-    color: #2C3E50;
-    font-weight: 700;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+.view {
+    position: relative;
+    display: grid;
+    background-color: var(--bgcolor-main);
 
-.nav {
-    padding: 50px;
-
-    a {
-        color: #2C3E50;
-        font-weight: 700;
-
-        &.router-link-exact-active {
-            color: #42B983;
-        }
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 </style>

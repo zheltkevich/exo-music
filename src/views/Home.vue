@@ -2,8 +2,9 @@
     <div
         class="home"
         data-theme="default">
+        dsagasdgs
         <img
-            alt="Vue logo"
+            alt="Логотип ExoMusic"
             src="../assets/svg/logo.svg">
         <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
