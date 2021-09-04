@@ -4,21 +4,22 @@
         data-theme="default">
         <template #main>
             <main class="main">
-                <header class="main__header">
+                <header class="main__header main-header">
                     <img
+                        class="main-header__logo"
                         alt="Логотип ExoMusic"
                         src="../assets/svg/logo.svg"
                         width="250"
                         height="90">
-                    <nav class="main__nav main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <NavButton />
+                    <nav class="main-header__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <NavButton class="navigation__button" />
                             </li>
                         </ul>
                     </nav>
                 </header>
-                <section class="main__content">
+                <section class="main__content main-content">
                     Content Content Content
                 </section>
             </main>
@@ -45,10 +46,26 @@ export default {
     height: 100%;
 
     &__header {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
         padding: 3%;
+    }
+}
+
+.main-header {
+    &__logo {
+        margin: 0 auto;
+    }
+}
+
+.navigation {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 }
 </style>
