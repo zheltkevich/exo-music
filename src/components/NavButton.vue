@@ -40,7 +40,7 @@
         </svg>
 
         <span class="nav-button__title">
-            {{ title }} fsdg
+            Каталог
         </span>
     </button>
 </template>
@@ -49,10 +49,10 @@
 export default {
     name: 'NavButton',
     props: {
-        title: {
-            type: String,
-            default: 'Меню',
-        },
+        // title: {
+        //     type: String,
+        //     default: 'Меню',
+        // },
     },
 };
 </script>
@@ -66,12 +66,21 @@ export default {
     border-radius: 50%;
 
     &__icon {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
     }
 
     &__title {
-        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-text-main);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 4px;
+        text-transform: uppercase;
     }
 }
 </style>
