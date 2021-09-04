@@ -10,6 +10,13 @@
                         src="../assets/svg/logo.svg"
                         width="250"
                         height="90">
+                    <nav class="main__nav main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <NavButton />
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
                 <section class="main__content">
                     Content Content Content
@@ -21,11 +28,13 @@
 
 <script>
 import ViewBackground from '@/components/ViewBackground.vue';
+import NavButton from '@/components/NavButton.vue';
 
 export default {
     name: 'Home',
     components: {
         ViewBackground,
+        NavButton,
     },
 };
 </script>
@@ -39,6 +48,7 @@ export default {
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        padding: 3%;
     }
 }
 </style>
