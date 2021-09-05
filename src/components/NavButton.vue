@@ -40,7 +40,7 @@
         </svg>
 
         <span class="nav-button__title">
-            Каталог
+            {{ title }}
         </span>
     </button>
 </template>
@@ -49,10 +49,10 @@
 export default {
     name: 'NavButton',
     props: {
-        // title: {
-        //     type: String,
-        //     default: 'Меню',
-        // },
+        title: {
+            type: String,
+            default: 'Меню',
+        },
     },
 };
 </script>

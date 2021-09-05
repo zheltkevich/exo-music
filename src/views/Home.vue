@@ -13,8 +13,14 @@
                         height="90">
                     <nav class="main-header__navigation navigation">
                         <ul class="navigation__list">
-                            <li class="navigation__item">
-                                <NavButton class="navigation__button" />
+                            <li
+                                v-for="(item, i) in navItems"
+                                :key="i"
+                                :index="i"
+                                class="navigation__item">
+                                <NavButton
+                                    class="navigation__button"
+                                    :title="item.title" />
                             </li>
                         </ul>
                     </nav>
@@ -31,11 +37,34 @@
 import ViewBackground from '@/components/ViewBackground.vue';
 import NavButton from '@/components/NavButton.vue';
 
+const NAV_ITEMS = [
+    {
+        title: 'Каталог',
+    },
+    {
+        title: 'Контакты',
+    },
+    {
+        title: 'Конструктор',
+    },
+    {
+        title: 'Галерея',
+    },
+];
+
 export default {
     name: 'Home',
     components: {
         ViewBackground,
         NavButton,
+    },
+    data() {
+        return {
+            navItems: NAV_ITEMS,
+        };
+    },
+    computed: {
+
     },
 };
 </script>
@@ -46,6 +75,7 @@ export default {
     height: 100%;
 
     &__header {
+        height: 100%;
         padding: 3%;
     }
 }
@@ -63,9 +93,12 @@ export default {
     }
 
     &__item {
+        display: flex;
         flex-basis: 50%;
         flex-grow: 0;
         flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
     }
 }
 </style>
