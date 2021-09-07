@@ -24,6 +24,9 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="test-border">
+                        <AdaptiveBorder />
+                    </div>
                 </header>
                 <section class="main__content main-content">
                     Content Content Content
@@ -36,6 +39,7 @@
 <script>
 import ViewBackground from '@/components/ViewBackground.vue';
 import NavButton from '@/components/NavButton.vue';
+import AdaptiveBorder from '@/components/AdaptiveBorder.vue';
 
 const NAV_ITEMS = [
     {
@@ -57,6 +61,7 @@ export default {
     components: {
         ViewBackground,
         NavButton,
+        AdaptiveBorder,
     },
     data() {
         return {
@@ -86,6 +91,10 @@ export default {
     }
 }
 
+.main-content {
+    display: none;
+}
+
 .navigation {
     &__list {
         display: flex;
@@ -100,5 +109,13 @@ export default {
         align-items: center;
         justify-content: center;
     }
+}
+
+.test-border {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: transparent;
 }
 </style>
