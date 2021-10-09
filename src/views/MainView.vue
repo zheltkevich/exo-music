@@ -1,39 +1,33 @@
 <template>
-    <div>
-        <Background
-            class="background"
-            data-theme="default" />
-        <main class="main">
-            <header class="main__header main-header">
-                <img
-                    class="main-header__logo"
-                    alt="Логотип ExoMusic"
-                    src="../assets/svg/logo.svg"
-                    width="250"
-                    height="90">
-                <nav class="main-header__navigation navigation">
-                    <ul class="navigation__list">
-                        <li
-                            v-for="(item, i) in navItems"
-                            :key="i"
-                            :index="i"
-                            class="navigation__item">
-                            <NavButton
-                                class="navigation__button"
-                                :title="item.title" />
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="main__content main-content">
-                Content Content Content
-            </section>
-        </main>
-    </div>
+    <main class="main">
+        <header class="main__header main-header">
+            <img
+                class="main-header__logo"
+                alt="Логотип ExoMusic"
+                src="../assets/svg/logo.svg"
+                width="250"
+                height="90">
+            <nav class="main-header__navigation navigation">
+                <ul class="navigation__list">
+                    <li
+                        v-for="(item, i) in navItems"
+                        :key="i"
+                        :index="i"
+                        class="navigation__item">
+                        <NavButton
+                            class="navigation__button"
+                            :title="item.title" />
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main__content main-content">
+            Content Content Content
+        </section>
+    </main>
 </template>
 
 <script>
-import Background from '@/components/background/Background.vue';
 import NavButton from '@/components/NavButton.vue';
 
 const NAV_ITEMS = [
@@ -54,7 +48,6 @@ const NAV_ITEMS = [
 export default {
     name: 'MainView',
     components: {
-        Background,
         NavButton,
     },
     data() {

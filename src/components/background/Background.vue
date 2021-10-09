@@ -1,6 +1,6 @@
 <template>
     <div class="background">
-        <BluredCircles />
+        <BluredCircles class="background__blured-circles" />
         <slot name="orbits"></slot>
     </div>
 </template>
@@ -17,8 +17,11 @@ export default {
 </script>
 
 <style lang="scss">
-.view-background {
-    position: relative;
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     max-width: 100%;
     height: 100%;
     max-height: 100%;
