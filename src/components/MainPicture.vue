@@ -14,8 +14,13 @@ export default {
 
 <style lang="scss">
 .main-picture {
+    width: 40%;
+    max-width: 600px;
+    max-height: 500px;
+
     &__img {
         display: flex;
+        width: 100%;
     }
 }
 </style>
