@@ -62,7 +62,7 @@ export default {
     width: 180px;
     height: 180px;
     background-color: transparent;
-    border: 1px solid var(--color-elements);
+    border: 1px solid var(--clr-elements);
     border-radius: 50%;
 
     &__icon {

@@ -1,17 +1,22 @@
 <template>
     <div class="background">
-        <BluredCircles class="background__blured-circles" />
-        <slot name="orbits"></slot>
+        <div class="background__relative-container">
+            <BgBluredCircles class="background__bg-blured-circles" />
+            <BgOrbits class="background__bg-orbits" />
+            <slot name="orbits"></slot>
+        </div>
     </div>
 </template>
 
 <script>
-import BluredCircles from '@/components/background/BluredCircles.vue';
+import BgBluredCircles from '@/components/background/BgBluredCircles.vue';
+import BgOrbits from '@/components/background/BgOrbits.vue';
 
 export default {
     name: 'Background',
     components: {
-        BluredCircles,
+        BgBluredCircles,
+        BgOrbits,
     },
 };
 </script>
@@ -25,5 +30,11 @@ export default {
     max-width: 100%;
     height: 100%;
     max-height: 100%;
+
+    &__relative-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 }
 </style>
