@@ -23,8 +23,9 @@ export default {
     height: 100%;
     opacity: 0.15;
     filter: blur(80px);
+    transition: 0.3s ease-in-out;
 
-    @media (min-width: var(--desktop)) {
+    @media (min-width: $tablet) {
         opacity: 0.08;
     }
 
