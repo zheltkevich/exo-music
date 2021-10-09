@@ -62,8 +62,10 @@ export default {
     width: 180px;
     height: 180px;
     background-color: transparent;
-    border: 1px solid var(--clr-elements);
+    // background-color: #62665E;
+    border: 1px solid rgba(#8E8E8E, 0.2);
     border-radius: 50%;
+    backdrop-filter: blur(3px);
 
     &__icon {
         width: 40px;

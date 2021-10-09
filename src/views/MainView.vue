@@ -1,12 +1,17 @@
 <template>
     <main class="main">
         <header class="main__header main-header">
-            <img
-                class="main-header__logo"
-                alt="Логотип ExoMusic"
-                src="../assets/svg/logo.svg"
-                width="250"
-                height="90">
+            <a
+                class="main-header__logo-link"
+                href="/"
+                rel="noopener noreferrer">
+                <img
+                    class="main-header__logo"
+                    alt="Логотип SteelVoice"
+                    src="../assets/svg/logo.svg"
+                    width="250"
+                    height="90">
+            </a>
             <nav class="main-header__navigation navigation">
                 <ul class="navigation__list">
                     <li
@@ -63,16 +68,23 @@ export default {
 
 <style lang="scss">
 .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-
-    &__header {
-        height: 100%;
-        padding: 3%;
-    }
 }
 
 .main-header {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+    &__logo-link {
+        display: block;
+    }
+
     &__logo {
         margin: 0 auto;
     }
@@ -83,8 +95,18 @@ export default {
 }
 
 .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+
     &__list {
         display: flex;
+        flex-grow: 1;
         flex-wrap: wrap;
     }
 

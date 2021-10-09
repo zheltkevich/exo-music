@@ -1,7 +1,7 @@
 <template>
     <div class="view">
-        <Background />
         <router-view />
+        <Background />
     </div>
 </template>
 
@@ -18,7 +18,10 @@ export default {
 <style lang="scss">
 .view {
     position: relative;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
     overflow: hidden;
     background-color: var(--bgcolor-main);
 }
