@@ -27,13 +27,14 @@
             </nav>
         </header>
         <section class="main__content main-content">
-            Content Content Content
+            <MainPicture />
         </section>
     </main>
 </template>
 
 <script>
 import NavButton from '@/components/NavButton.vue';
+import MainPicture from '@/components/MainPicture.vue';
 
 const NAV_ITEMS = [
     {
@@ -54,6 +55,7 @@ export default {
     name: 'MainView',
     components: {
         NavButton,
+        MainPicture,
     },
     data() {
         return {
@@ -76,12 +78,14 @@ export default {
 }
 
 .main-header {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
 
     &__logo-link {
+        position: absolute;
         display: block;
     }
 
@@ -91,7 +95,13 @@ export default {
 }
 
 .main-content {
-    display: none;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .navigation {
