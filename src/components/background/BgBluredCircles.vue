@@ -21,8 +21,12 @@ export default {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    opacity: 0.08;
+    opacity: 0.15;
     filter: blur(80px);
+
+    @media (min-width: var(--desktop)) {
+        opacity: 0.08;
+    }
 
     &__item {
         flex-basis: 50%;
